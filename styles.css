@@ -95,6 +95,7 @@ section h2 {
   padding: 20px;
   border-radius: 10px;
 }
+
 /* ===== NOTICIAS ===== */
 .noticias-grid {
   display: grid;
@@ -136,7 +137,7 @@ section h2 {
   margin-bottom: 12px;
 }
 
-/* Ranking con tarjetas */
+/* ===== RANKING ===== */
 .ranking-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -187,6 +188,17 @@ section h2 {
   background: #ff3369;
 }
 
+.rank-number {
+  display: inline-block;
+  background: #ff004c;
+  color: white;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
 /* ===== COMUNIDAD ===== */
 #community button {
   background: #ff004c;
@@ -201,6 +213,18 @@ section h2 {
 
 #community button:hover {
   background: #ff3369;
+}
+
+/* ===== HISTORIA ===== */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.video-container iframe {
+  border-radius: 12px;
+  max-width: 100%;
 }
 
 /* ===== SOBRE NOSOTROS ===== */
@@ -256,6 +280,58 @@ section h2 {
   background: #ff3369;
 }
 
+/* ===== CONTACTO ===== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #ff004c;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.contact-form button {
+  background: #ff004c;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #ff3369;
+}
+
 /* ===== FONDOS DIFERENTES POR SECCIÓN ===== */
 #news {
   background: url("assets/fondo-noticias.png") no-repeat center center/cover;
@@ -277,22 +353,46 @@ section h2 {
   color: white;
 }
 
-/* ===== FOOTER ===== */
-footer {
-  background: #111;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-  font-size: 14px;
-  color: #aaa;
-}
-.rank-number {
-  display: inline-block;
-  background: #ff004c;
+#contacto {
+  background: url("assets/fondo-contacto.png") no-repeat center center/cover;
   color: white;
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 14px;
-  margin-bottom: 10px;
 }
+
+/* ===== HISTORIA ===== */
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.history-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.history-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.history-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ff004c;
+}
+
+.history-card p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+}
+#history {
+  background: url("assets/fondo-history.png") no-repeat center center/cover;
+  color: white;
+}
+
