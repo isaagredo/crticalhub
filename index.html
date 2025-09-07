@@ -1,83 +1,121 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CriticalHub E-Sports</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CriticalHub E-Sports</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- ===== HEADER UNIFICADO ===== -->
-<header>
-<h1>CriticalHub E-Sports</h1>
-<nav>
-<ul>
-<li><a href="index.html">Inicio</a></li>
-<li><a href="news.html">Noticias</a></li>
-<li><a href="ranking.html">Ranking</a></li>
-<li><a href="community.html">Comunidad</a></li>
-<li><a href="history.html">Historia</a></li>
-<li><a href="about.html">Sobre Nosotros</a></li>
-<li><a href="contacto.html">Contacto</a></li>
-</ul>
-</nav>
-</header>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>CriticalHub E-Sports</h1>
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="news.html">Noticias</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+        <li><a href="community.html">Comunidad</a></li>
+        <li><a href="history.html">Historia</a></li>
+        <li><a href="about.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+  </header>
 
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Bienvenido a CriticalHub E-Sports</h2>
+      <p>Noticias, rankings y comunidad gamer en un solo lugar.</p>
+      <a href="news.html" class="btn-hero">Ver Noticias</a>
+    </div>
+  </section>
 
-<!-- ===== HERO ===== -->
-<section id="hero">
-<div class="hero-content">
-<h2>Bienvenido a CriticalHub</h2>
-<p>Tu portal de noticias, rankings y comunidad de e-sports</p>
-<a href="ranking.html" class="btn-hero">Explorar Ranking</a>
-</div>
-</section>
+  <!-- ===== NOTICIAS ===== -->
+  <section id="news">
+    <h2>Últimas Noticias</h2>
+    <div class="noticias-grid">
+      <div class="noticia-card">
+        <img src="assets/valorant.jpeg" alt="Valorant">
+        <h3>Torneo Valorant</h3>
+        <p>El nuevo torneo de Valorant comienza este fin de semana.</p>
+      </div>
+      <div class="noticia-card">
+        <img src="assets/leagueoflegends.jpeg" alt="LoL">
+        <h3>League of Legends</h3>
+        <p>Actualización de temporada con cambios importantes en el meta.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== RANKING ===== -->
+  <section id="ranking">
+    <h2>Ranking Global</h2>
+    <div class="ranking-grid">
+      <div class="ranking-card">
+        <span class="rank-number">#1</span>
+        <img src="assets/csgo.jpeg" alt="CSGO">
+        <h3>CS:GO</h3>
+        <a href="ranking.html" class="btn-card">Ver Más</a>
+      </div>
+      <div class="ranking-card">
+        <span class="rank-number">#2</span>
+        <img src="assets/dota2.jpeg" alt="Dota 2">
+        <h3>Dota 2</h3>
+        <a href="ranking.html" class="btn-card">Ver Más</a>
+      </div>
+    </div>
+  </section>
 
-<!-- ===== NOTICIAS ===== -->
-<section id="news">
-<h2>Últimas Noticias</h2>
-<div class="section-content">
-<p>Mantente al día con lo último del mundo de los e-sports: torneos, fichajes y más.</p>
-<a href="news.html" class="btn-card">Ver Noticias</a>
-</div>
-</section>
+  <!-- ===== COMUNIDAD ===== -->
+  <section id="community">
+    <h2>Nuestra Comunidad</h2>
+    <div class="section-content">
+      <p>Únete a miles de jugadores que comparten tu pasión por los e-sports.</p>
+      <button onclick="window.location.href='community.html'">Entrar</button>
+    </div>
+  </section>
 
+  <!-- ===== HISTORIA ===== -->
+  <section id="history">
+    <h2>Nuestra Historia</h2>
+    <div class="history-grid">
+      <div class="history-card">
+        <h3>Los Inicios</h3>
+        <p>CriticalHub nació con la misión de conectar a los gamers.</p>
+      </div>
+      <div class="history-card">
+        <h3>Crecimiento</h3>
+        <p>En pocos años, la comunidad se expandió a nivel global.</p>
+      </div>
+    </div>
+  </section>
 
-<!-- ===== RANKING ===== -->
-<section id="ranking">
-<h2>Ranking de Juegos Populares</h2>
-<div class="section-content ranking-grid">
-<div class="ranking-card">
-<span class="rank-number">#1</span>
-<img src="assets/valorant.jpeg" alt="Valorant">
-<h3>Valorant</h3>
-<a href="https://playvalorant.com/" target="_blank" class="btn-card">Descargar</a>
-</div>
-<div class="ranking-card">
-<span class="rank-number">#2</span>
-<img src="assets/csgo.jpeg" alt="Counter-Strike 2">
-<h3>Counter-Strike 2</h3>
-<a href="https://www.counter-strike.net/cs2" target="_blank" class="btn-card">Descargar</a>
-</div>
-<div class="ranking-card">
-<span class="rank-number">#3</span>
-<img src="assets/leagueoflegends.jpeg" alt="League of Legends">
-<h3>League of Legends</h3>
-<a href="https://www.leagueoflegends.com/" target="_blank" class="btn-card">Descargar</a>
-</div>
-<div class="ranking-card">
-<span class="rank-number">#4</span>
-<img src="assets/fornite.jpeg" alt="Fortnite">
-<h3>Fortnite</h3>
-<a href="https://www.fortnite.com/" target="_blank" class="btn-card">Descargar</a>
-</div>
-<div class="ranking-card">
-<span class="rank-number">#5</span>
-<img src="assets/dota2.jpeg" alt="Dota 2">
-<h3>Dota 2</h3>
-<a href="https://www.dota2.com/" target="_blank" class="btn-card">Descargar</a>
+  <!-- ===== SOBRE NOSOTROS ===== -->
+  <section id="about">
+    <h2>Sobre Nosotros</h2>
+    <div class="about-container">
+      <div class="about-card">
+        <img src="assets/criticalbase.png" alt="Fundador">
+        <h3>Isabella Agredo</h3>
+        <p>Fundadora de CriticalHub, apasionada por los e-sports.</p>
+        <div class="social-links">
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 CriticalHub. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script src="scripts.js"></script>
+</body>
 </html>
-
-
