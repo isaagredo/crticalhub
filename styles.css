@@ -395,128 +395,42 @@ section h2 {
   background: url("assets/fondo-history.png") no-repeat center center/cover;
   color: white;
 }
-/* ================== */
-/* 📱 ESTILOS MÓVILES */
-/* ================== */
-
-@media (max-width: 768px) {
-  /* ===== HEADER ===== */
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    text-align: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  nav a {
-    font-size: 16px;
-  }
-
-  /* ===== HERO ===== */
-  #hero {
-    height: 70vh;
-    padding: 20px;
-  }
-
-  .hero-content {
-    padding: 15px;
-  }
-
-  .hero-content h2 {
-    font-size: 22px;
-  }
-
-  .hero-content p {
-    font-size: 16px;
-  }
-
-  /* ===== SECCIONES ===== */
-  section {
-    padding: 50px 15px;
-  }
-
-  section h2 {
-    font-size: 24px;
-  }
-
-  .section-content {
-    padding: 15px;
-  }
-
-  /* ===== GRID (Noticias, Ranking, Historia) ===== */
-  .noticias-grid,
-  .ranking-grid,
-  .history-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .noticia-card,
-  .ranking-card,
-  .history-card {
-    padding: 12px;
-  }
-
-  /* ===== SOBRE NOSOTROS ===== */
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .about-card {
-    width: 90%;
-  }
-
-  /* ===== CONTACTO ===== */
-  .contact-form {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .form-group input,
-  .form-group textarea {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  .contact-form button {
-    font-size: 14px;
-    padding: 10px;
-  }
+/* ===== MENÚ HAMBURGUESA ===== */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
-@media (max-width: 480px) {
-  /* Extra pequeño (celulares chicos tipo iPhone SE) */
-  header h1 {
-    font-size: 20px;
+/* Versión móvil */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* oculto por defecto */
+    flex-direction: column;
+    gap: 15px;
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
   }
 
-  nav a {
-    font-size: 14px;
+  nav ul.show {
+    display: flex; /* se activa con JS */
   }
 
-  .hero-content h2 {
-    font-size: 18px;
+  .menu-toggle {
+    display: block; /* aparece el botón ☰ */
   }
 
-  .hero-content p {
-    font-size: 14px;
-  }
-
-  section h2 {
-    font-size: 20px;
-  }
-
-  .btn-hero,
-  .btn-card {
-    padding: 8px 12px;
-    font-size: 14px;
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
