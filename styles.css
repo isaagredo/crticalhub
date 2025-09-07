@@ -43,6 +43,16 @@ nav a:hover {
   color: #ff004c;
 }
 
+/* ===== MENÚ HAMBURGUESA ===== */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 /* ===== HERO ===== */
 #hero {
   background: url("assets/criticalbase.png") no-repeat center center/cover;
@@ -227,6 +237,39 @@ section h2 {
   max-width: 100%;
 }
 
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.history-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.history-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.history-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ff004c;
+}
+
+.history-card p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
 /* ===== SOBRE NOSOTROS ===== */
 .about-container {
   display: flex;
@@ -257,7 +300,6 @@ section h2 {
   margin-bottom: 15px;
 }
 
-/* Redes sociales en Sobre Nosotros */
 .social-links {
   margin-top: 15px;
   display: flex;
@@ -332,7 +374,7 @@ section h2 {
   background: #ff3369;
 }
 
-/* ===== FONDOS DIFERENTES POR SECCIÓN ===== */
+/* ===== FONDOS DIFERENTES ===== */
 #news {
   background: url("assets/fondo-noticias.png") no-repeat center center/cover;
   color: white;
@@ -358,57 +400,17 @@ section h2 {
   color: white;
 }
 
-/* ===== HISTORIA ===== */
-.history-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.history-card {
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.history-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
-}
-
-.history-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #ff004c;
-}
-
-.history-card p {
-  font-size: 14px;
-  color: #ccc;
-  line-height: 1.5;
-}
-#history {
-  background: url("assets/fondo-history.png") no-repeat center center/cover;
-  color: white;
-}
-/* ===== MENÚ HAMBURGUESA ===== */
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-/* Versión móvil */
+/* ================== */
+/* 📱 ESTILOS MÓVILES */
+/* ================== */
 @media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   nav ul {
-    display: none; /* oculto por defecto */
+    display: none;
     flex-direction: column;
     gap: 15px;
     background: #111;
@@ -421,16 +423,63 @@ section h2 {
   }
 
   nav ul.show {
-    display: flex; /* se activa con JS */
+    display: flex;
   }
 
   .menu-toggle {
-    display: block; /* aparece el botón ☰ */
+    display: block;
   }
 
-  header {
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .noticias-grid,
+  .ranking-grid,
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 22px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero-content h2 {
+    font-size: 18px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  .btn-hero,
+  .btn-card {
+    padding: 8px 12px;
+    font-size: 14px;
   }
 }
 
