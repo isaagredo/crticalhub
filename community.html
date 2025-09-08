@@ -3,55 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comunidad - CriticalHub</title>
+  <title>Comunidad - CriticalHub E-Sports</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
-<script src="scripts.js"></script>
-
 <body>
-    <!-- ===== HEADER ===== -->
-<header>
-  <h1>CriticalHub E-Sports</h1>
-  <nav id="navbar">
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="news.html">Noticias</a></li>
-      <li><a href="ranking.html">Ranking</a></li>
-      <li><a href="community.html">Comunidad</a></li>
-      <li><a href="history.html">Historia</a></li>
-      <li><a href="about.html">Sobre Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
-  <!-- Botón hamburguesa -->
-  <button class="menu-toggle" id="menu-toggle">☰</button>
-</header>
-
-  <!-- HEADER -->
+  <!-- HEADER UNIFICADO -->
   <header>
     <h1>CriticalHub E-Sports</h1>
-    <nav>
+    <nav id="navbar">
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="news.html">Noticias</a></li>
         <li><a href="ranking.html">Ranking</a></li>
+        <li><a href="community.html" class="active">Comunidad</a></li>
+        <li><a href="history.html">Historia</a></li>
         <li><a href="about.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
   </header>
 
   <!-- SECCIÓN COMUNIDAD -->
   <section id="community">
     <h2>Comunidad</h2>
     <div class="section-content">
-      <p>Únete a nuestro servidor de Discord para compartir con otros gamers.</p>
-      <button onclick="window.open('https://discord.com/invite/Ydh2X5Rw2g', '_blank')">Unirse</button>
+      <p>
+        ¡Únete a la comunidad de CriticalHub E-Sports! Aquí podrás compartir tus experiencias, 
+        participar en foros y conocer a otros jugadores apasionados.
+      </p>
+      <!-- BOTÓN CON ENLACE EXTERNO -->
+      <button onclick="window.open('https://discord.com/invite/JKy4jBYXxR', '_blank')">
+        Unirme a la Comunidad
+      </button>
     </div>
   </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 CriticalHub. Todos los derechos reservados.</p>
-  </footer>
 </body>
 </html>
+
+
+

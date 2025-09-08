@@ -53,7 +53,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* ===== HERO ===== */
+/* ===== HERO (solo en inicio) ===== */
 #hero {
   background: url("assets/criticalbase.png") no-repeat center center/cover;
   height: 100vh;
@@ -92,10 +92,19 @@ section {
   text-align: center;
 }
 
+/* ===== TÍTULOS DESTACADOS ===== */
 section h2 {
-  font-size: 28px;
+  font-size: 36px;
   color: #ff004c;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 3px solid #ff004c; /* Borde para destacar */
+  border-radius: 8px;        /* Esquinas redondeadas */
+  background: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
 }
 
 .section-content {
@@ -107,6 +116,11 @@ section h2 {
 }
 
 /* ===== NOTICIAS ===== */
+#news {
+  background: url("assets/fondo-noticias.png") no-repeat center center/cover;
+  color: white;
+}
+
 .noticias-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -148,6 +162,11 @@ section h2 {
 }
 
 /* ===== RANKING ===== */
+#ranking {
+  background: url("assets/fondo-ranking.png") no-repeat center center/cover;
+  color: white;
+}
+
 .ranking-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -210,6 +229,11 @@ section h2 {
 }
 
 /* ===== COMUNIDAD ===== */
+#community {
+  background: url("assets/fondo-comunidad.png") no-repeat center center/cover;
+  color: white;
+}
+
 #community button {
   background: #ff004c;
   color: white;
@@ -226,6 +250,11 @@ section h2 {
 }
 
 /* ===== HISTORIA ===== */
+#history {
+  background: url("assets/fondo-history.png") no-repeat center center/cover;
+  color: white;
+}
+
 .video-container {
   display: flex;
   justify-content: center;
@@ -271,6 +300,11 @@ section h2 {
 }
 
 /* ===== SOBRE NOSOTROS ===== */
+#about {
+  background: url("assets/fondo-about.png") no-repeat center center/cover;
+  color: white;
+}
+
 .about-container {
   display: flex;
   flex-wrap: wrap;
@@ -323,6 +357,11 @@ section h2 {
 }
 
 /* ===== CONTACTO ===== */
+#contacto {
+  background: url("assets/fondo-contacto.png") no-repeat center center/cover;
+  color: white;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -372,32 +411,6 @@ section h2 {
 
 .contact-form button:hover {
   background: #ff3369;
-}
-
-/* ===== FONDOS DIFERENTES ===== */
-#news {
-  background: url("assets/fondo-noticias.png") no-repeat center center/cover;
-  color: white;
-}
-
-#ranking {
-  background: url("assets/fondo-ranking.png") no-repeat center center/cover;
-  color: white;
-}
-
-#community {
-  background: url("assets/fondo-comunidad.png") no-repeat center center/cover;
-  color: white;
-}
-
-#about {
-  background: url("assets/fondo-about.png") no-repeat center center/cover;
-  color: white;
-}
-
-#contacto {
-  background: url("assets/fondo-contacto.png") no-repeat center center/cover;
-  color: white;
 }
 
 /* ================== */
